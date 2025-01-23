@@ -54,20 +54,24 @@ export default function AdvancedSetting() {
       <ScrollArea.Viewport className="h-full w-full px-3">
         <div className={styles.tabContent}>
           <div className={styles.section}>
-            <span className={styles.sectionLabel}>章节乱序</span>
-            <span className={styles.sectionDescription}>开启后，每次练习章节中单词会随机排序。下一章节生效</span>
+            <span className={styles.sectionLabel}>Главы не по порядку</span>
+            <span className={styles.sectionDescription}>
+              После открытия слова в каждой главе с упражнениями будут отсортированы случайным образом.Следующая глава вступает в силу
+            </span>
             <div className={styles.switchBlock}>
               <Switch checked={randomConfig.isOpen} onChange={onToggleRandom} className="switch-root">
                 <span aria-hidden="true" className="switch-thumb" />
               </Switch>
-              <span className="text-right text-xs font-normal leading-tight text-gray-600">{`随机已${
-                randomConfig.isOpen ? '开启' : '关闭'
+              <span className="text-right text-xs font-normal leading-tight text-gray-600">{`Случайность ${
+                randomConfig.isOpen ? ' включена' : ' выключена'
               }`}</span>
             </div>
           </div>
           <div className={styles.section}>
-            <span className={styles.sectionLabel}>练习时展示上一个/下一个单词</span>
-            <span className={styles.sectionDescription}>开启后，练习中会在上方展示上一个/下一个单词</span>
+            <span className={styles.sectionLabel}>Показывайте предыдущее / следующее слово во время тренировки</span>
+            <span className={styles.sectionDescription}>
+              После открытия предыдущее / следующее слово будет отображаться вверху во время выполнения упражнения
+            </span>
             <div className={styles.switchBlock}>
               <Switch checked={isShowPrevAndNextWord} onChange={onToggleLastAndNextWord} className="switch-root">
                 <span aria-hidden="true" className="switch-thumb" />

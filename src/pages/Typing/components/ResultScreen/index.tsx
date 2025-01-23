@@ -305,9 +305,9 @@ const ResultScreen = () => {
                       className="my-btn-primary h-12 border-2 border-solid border-gray-300 bg-white text-base text-gray-700 dark:border-gray-700 dark:bg-gray-600 dark:text-white dark:hover:bg-gray-700"
                       type="button"
                       onClick={repeatButtonHandler}
-                      title="重复本章节"
+                      title="Заново"
                     >
-                      重复本章节
+                      Заново
                     </button>
                   </Tooltip>
                 </>
@@ -320,7 +320,7 @@ const ResultScreen = () => {
                     onClick={nextButtonHandler}
                     title="下一章节"
                   >
-                    下一章节
+                    Дальше
                   </button>
                 </Tooltip>
               )}

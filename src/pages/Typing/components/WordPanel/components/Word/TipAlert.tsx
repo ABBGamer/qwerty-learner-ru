@@ -20,8 +20,11 @@ export const TipAlert: FC<ITipAlert> = ({ className, show, setShow }) => {
         <div className={`alert z-10 w-fit cursor-pointer pr-5 ${className}`} onClick={onClose}>
           <Alert variant="destructive" className="relative">
             <PhWarning className="h-4 w-4" />
-            <AlertTitle>插件冲突！</AlertTitle>
-            <AlertDescription>如果多次输入失败，可能是与本地浏览器插件冲突，请关闭相关插件或切换浏览器试试</AlertDescription>
+            <AlertTitle>Конфликт подключаемых модулей！</AlertTitle>
+            <AlertDescription>
+              Если вам не удается войти в систему несколько раз, это может быть связано с конфликтом с подключаемым модулем локального
+              браузера, пожалуйста, закройте соответствующий подключаемый модуль или переключите браузер, чтобы попробовать{' '}
+            </AlertDescription>
           </Alert>
         </div>
       )}

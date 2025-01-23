@@ -75,7 +75,10 @@ export default function WordPanel() {
       // 用户完成当前章节
       dispatch({ type: TypingStateActionType.FINISH_CHAPTER })
       if (isReviewMode) {
-        setReviewModeInfo((old) => ({ ...old, reviewRecord: old.reviewRecord ? { ...old.reviewRecord, isFinished: true } : undefined }))
+        setReviewModeInfo((old) => ({
+          ...old,
+          reviewRecord: old.reviewRecord ? { ...old.reviewRecord, isFinished: true } : undefined,
+        }))
       }
     }
   }, [
@@ -165,7 +168,7 @@ export default function WordPanel() {
               <div className="absolute flex h-full w-full justify-center">
                 <div className="z-10 flex w-full items-center backdrop-blur-sm">
                   <p className="w-full select-none text-center text-xl text-gray-600 dark:text-gray-50">
-                    按任意键{state.timerData.time ? '继续' : '开始'}
+                    Нажмите любую клавишу, чтобы {state.timerData.time ? ' продолжить' : ' начать'}
                   </p>
                 </div>
               </div>

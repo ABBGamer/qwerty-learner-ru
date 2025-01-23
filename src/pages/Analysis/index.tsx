@@ -53,7 +53,7 @@ const Analysis = () => {
             ) : (
               <>
                 <div className="mx-4 my-8 h-auto w-auto overflow-hidden rounded-lg p-8 shadow-lg dark:bg-gray-700 dark:bg-opacity-50">
-                  <HeatmapCharts title="过去一年练习次数热力图" data={exerciseRecord} />
+                  <HeatmapCharts title="Тепловая карта количества учений за прошедший год" data={exerciseRecord} />
                 </div>
                 <div className="mx-4 my-8 h-auto w-auto overflow-hidden rounded-lg p-8 shadow-lg dark:bg-gray-700 dark:bg-opacity-50">
                   <HeatmapCharts title="过去一年练习词数热力图" data={wordRecord} />

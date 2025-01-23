@@ -81,7 +81,7 @@ export default function StarCard() {
               onClick={onClickWantStar}
               title="我想收藏"
             >
-              我想收藏
+              Я хочу начать
             </button>
           </div>
         )}
@@ -114,7 +114,8 @@ export default function StarCard() {
           </button>
         </div>
         <span className="pb-4 text-xl text-gray-600 dark:text-gray-50">
-          坚持练习，提高语言能力。将 <span className="text-indigo-600">「Qwerty Learner」</span>保存到收藏夹，永不迷失！
+          Упорствуйте в практике и совершенствуйте языковые навыки в <span className="text-indigo-600">「Qwerty Learner」</span>Сохраняйте в
+          избранное и никогда не теряйтесь！
         </span>
         {content}
       </div>

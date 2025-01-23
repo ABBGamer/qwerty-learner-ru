@@ -42,6 +42,7 @@ export type WrongWordData = {
 }
 
 export type TypingState = {
+  isWordVisible: boolean
   chapterData: ChapterData
   timerData: TimerData
   isTyping: boolean

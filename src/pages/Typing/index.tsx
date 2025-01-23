@@ -9,7 +9,7 @@ import WordList from './components/WordList'
 import WordPanel from './components/WordPanel'
 import { useConfetti } from './hooks/useConfetti'
 import { useWordList } from './hooks/useWordList'
-import { TypingContext, TypingStateActionType, initialState, typingReducer } from './store'
+import { initialState, TypingContext, typingReducer, TypingStateActionType } from './store'
 import { DonateCard } from '@/components/DonateCard'
 import Header from '@/components/Header'
 import StarCard from '@/components/StarCard'
@@ -138,14 +138,14 @@ const App: React.FC = () => {
           <PronunciationSwitcher />
           <Switcher />
           <StartButton isLoading={isLoading} />
-          <Tooltip content="跳过该词">
+          <Tooltip content="Пропустите это слово">
             <button
               className={`${
                 state.isShowSkip ? 'bg-orange-400' : 'invisible w-0 bg-gray-300 px-0 opacity-0'
               } my-btn-primary transition-all duration-300 `}
               onClick={skipWord}
             >
-              Skip
+              Пропустить
             </button>
           </Tooltip>
         </Header>

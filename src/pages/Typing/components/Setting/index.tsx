@@ -86,7 +86,7 @@ export default function Setting() {
                           }
                         >
                           <IconEar className="mr-2 text-neutral-500  dark:text-neutral-300" />
-                          <span className="text-neutral-500 dark:text-neutral-300 ">音效设置</span>
+                          <span className="text-neutral-500 dark:text-neutral-300 ">Звук</span>
                         </Tab>
                         <Tab
                           className={({ selected }) =>
@@ -97,7 +97,7 @@ export default function Setting() {
                           }
                         >
                           <IconAdjustmentsHorizontal className="mr-2 text-neutral-500  dark:text-neutral-300" />
-                          <span className="text-neutral-500 dark:text-neutral-300">高级设置</span>
+                          <span className="text-neutral-500 dark:text-neutral-300">Общие</span>
                         </Tab>
                         <Tab
                           className={({ selected }) =>
@@ -108,7 +108,7 @@ export default function Setting() {
                           }
                         >
                           <IconEye className="mr-2 text-neutral-500  dark:text-neutral-300" />
-                          <span className="text-neutral-500 dark:text-neutral-300">显示设置</span>
+                          <span className="text-neutral-500 dark:text-neutral-300">Дисплей</span>
                         </Tab>
                         <Tab
                           className={({ selected }) =>
@@ -119,7 +119,7 @@ export default function Setting() {
                           }
                         >
                           <IconDatabaseCog className="mr-2 text-neutral-500  dark:text-neutral-300" />
-                          <span className="text-neutral-500 dark:text-neutral-300">数据设置</span>
+                          <span className="text-neutral-500 dark:text-neutral-300">Данные</span>
                         </Tab>
                       </Tab.List>
 
